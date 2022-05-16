@@ -2,7 +2,7 @@ package com.allanjhonny.peoplemanager.domain.enums;
 
 public enum PerfilUsuario {
 
-	MEMBRO(1, "Usuário Básico"), COORDENADOR(2, "Usuário pode emitir relatórios");
+	MEMBRO(1, "ROLE_MEMBRO"), COORDENADOR(2, "ROLE_ADMIN");
 
 	private int cod;
 	private String descrição;
