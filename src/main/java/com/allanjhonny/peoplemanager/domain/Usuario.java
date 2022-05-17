@@ -3,12 +3,14 @@ package com.allanjhonny.peoplemanager.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.allanjhonny.peoplemanager.domain.enums.PerfilUsuario;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Usuario implements Serializable {
@@ -17,7 +19,11 @@ public class Usuario implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
+	
+	@Column(unique=true)
 	private String nomeUsuario;
+	
+	@JsonIgnore
 	private String senhaUsuario;
 	private Integer perfilUsuario;
 	

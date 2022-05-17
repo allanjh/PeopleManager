@@ -5,19 +5,19 @@ public enum PerfilUsuario {
 	MEMBRO(1, "ROLE_MEMBRO"), COORDENADOR(2, "ROLE_ADMIN");
 
 	private int cod;
-	private String descrição;
+	private String descricao;
 
-	private PerfilUsuario(int cod, String descrição) {
+	private PerfilUsuario(int cod, String descricao) {
 		this.cod = cod;
-		this.descrição = descrição;
+		this.descricao = descricao;
 	}
 
 	public int getCod() {
 		return cod;
 	}
 
-	public String getDescrição() {
-		return descrição;
+	public String getDescricao() {
+		return descricao;
 	}
 
 	public static PerfilUsuario toEnum(Integer cod) {

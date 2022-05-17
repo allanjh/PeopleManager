@@ -77,6 +77,7 @@ public class DBService {
 		Menu menuCadCoordenadorRegional = new Menu(null, "Coordenador Regional", "/coordenadorRegional/", PerfilUsuario.COORDENADOR);
 		Menu menuCadCoordenadorLocal = new Menu(null, "Coordenador Local", "/coordenadorLocal/", PerfilUsuario.MEMBRO);
 		
+		System.out.println("-------------------------INSERINDO USUARIOS");
 		Usuario user1 = new Usuario(null, "Allan Jhonny", "Fender", PerfilUsuario.COORDENADOR);
 		Usuario user2 = new Usuario(null, "Marcia", "Coelho", PerfilUsuario.MEMBRO);
 		
